@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.jboss.tools.openshift.Connection=https\://bhushanrade@api.preview.openshift.com
+org.jboss.tools.openshift.DeployProject=EmployeePortal
+org.jboss.tools.openshift.Service=bhushan@jws-app-mongodb
+org.jboss.tools.openshift.SourcePath=${workspace_loc\:/EmployeePortal}

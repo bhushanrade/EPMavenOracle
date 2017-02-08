@@ -1,0 +1,130 @@
+
+  
+      <div class="container"  style="width:70%; margin-top: 20px;">
+         <div class="panel panel-default">
+           <a href="#/signup">Home</a>
+           <a href="#/showEmpForAdmin">Employee Search</a>
+           <a href="" ng-click="logout()">Log out </a>
+         </div>
+           
+        
+          <div class="panel panel-default">
+              <div class="panel-heading"><span class="lead">Employee Updation </span></div>
+              <div class="formcontainer">
+                  <form ng-submit="update()" name="myForm" class="form-horizontal">
+                      <input type="hidden" ng-model="ctrl.user.id" />
+                      
+					  
+					  <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="address">Id</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="employee.id" id="address" class="form-control input-sm" placeholder=""/>
+                              </div>
+                          </div>
+                      </div>
+					  
+					  <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="uname">Name</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="employee.name" id="uname" class="username form-control input-sm" placeholder="Enter your name" required ng-minlength="3"/>
+                                  <div class="has-error" ng-show="myForm.$dirty">
+                                      <span ng-show="myForm.uname.$error.required">This is a required field</span>
+                                      <span ng-show="myForm.uname.$error.minlength">Minimum length required is 3</span>
+                                      <span ng-show="myForm.uname.$invalid">This field is invalid </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                        
+                      
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="address">Location</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="employee.location" id="" class="form-control input-sm" placeholder="Employee current Location"/>
+                              </div>
+                          </div>
+                      </div>
+					  
+					  
+					  <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="address">Contact No.</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="employee.contactno"  class="form-control input-sm" placeholder="contact number with country code"/>
+                              </div>
+                          </div>
+                      </div>
+					  
+					  
+
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="email">Email</label>
+                              <div class="col-md-7">
+                                  <input type="email" ng-model="employee.email" id="email" class="email form-control input-sm" placeholder="Enter your Email" required/>
+                                  <div class="has-error" ng-show="myForm.$dirty">
+                                      <span ng-show="myForm.email.$error.required">This is a required field</span>
+                                      <span ng-show="myForm.email.$invalid">This field is invalid </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+					  
+					  
+					  <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" >Password</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="employee.password" class="form-control input-sm" placeholder="contains atleast one special charctor and number"/>
+                              </div>
+                          </div>
+                      </div>
+					  
+					  
+					  <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="">Org. Unit</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="employee.orgunit"  class="form-control input-sm" placeholder=""/>
+                              </div>
+                          </div>
+                      </div>
+					  
+					  <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="">Skills</label>
+                              <div class="col-md-7">
+                                  <textarea class="form-control" ng-model="employee.skills" rows="4" placeholder="Fill all Skillsets"></textarea>
+                              </div>
+                          </div>
+                      </div>
+					  
+					  
+					  <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="address">Projects	</label>
+                              <div class="col-md-7">
+                                  <textarea class="form-control" ng-model="employee.project" rows="4"  placeholder="Assign project Info "></textarea>
+                              </div>
+                          </div>
+                      </div>
+					  
+					  
+					  
+
+                      <div class="row">
+                          <div class="form-actions floatRight">
+                              <input type="submit"  value="Update Info" class="btn btn-primary btn-sm" ng-disabled="myForm.$invalid">
+                              <button type="button" ng-click="showEmpForAdmin()" class="btn btn-primary btn-sm">Show Employee</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+         
+   
+      
+  

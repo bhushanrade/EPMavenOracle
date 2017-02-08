@@ -1,0 +1,43 @@
+body, #mainWrapper {
+	height: 70%;
+	background-color:rgb(245, 245, 245);
+}
+
+body, .form-control{
+	font-size:12px!important;
+}
+
+/*for Add and reset buttons*/
+.floatRight{
+	float:right;
+	margin-right: 18px;
+}
+
+.has-error{
+	color:red;
+}
+
+.formcontainer{
+	background-color: #DAE8E8;
+	padding: 20px;
+	margin:center;
+}
+
+.tablecontainer{
+	padding-left: 20px;
+}
+
+.generic-container {
+  width:50%;
+  margin:center;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #EAE7E7;
+ 
+}
+
+.custom-width {
+    width: 50px !important;
+}
